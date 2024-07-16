@@ -32,7 +32,7 @@ select distinct district from address where district like 'K%' and district like
 Получите из таблицы платежей за прокат фильмов информацию по платежам, которые выполнялись в промежуток с 15 июня 2005 года по 18 июня 2005 года **включительно** и стоимость которых превышает 10.00.
 
 ```
-select * from payment where payment_date > '2005-06-15 0:00:00' and payment_date < '2005-06-18 23:59:59' and amount > 10.00;
+select * from payment where payment_date >= '2005-06-15 0:00:00' and payment_date =< '2005-06-18 23:59:59' and amount > 10.00;
 ```
 
 ### Задание 3
